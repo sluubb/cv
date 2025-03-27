@@ -1,16 +1,16 @@
 body {
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     margin: 0;
     padding: 0;
     font-family: "Roboto Mono", Helvetica, sans-serif;
 }
 
 .header {
-    background: rgb(15, 15, 15);
+    background: #0f0f0f;
     height: 2em;
     margin: 0;
     padding: 0.5em;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-align: center;
 }
 
@@ -27,10 +27,19 @@ body {
     font-size: 0.5em;
 }
 
+.header a {
+    background: #ffffff;
+    padding: 0.1em 0.2em;
+    border-radius: 0.5em;
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 .content {
     margin: 0 4em;
     padding: 3em 0 0 0;
-    color: rgb(15, 15, 15);
+    color: #0f0f0f;
 }
 
 .content .title {
@@ -42,6 +51,15 @@ body {
 }
 
 .content .links {
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 25%,
+        #ebebeb 25%,
+        #ebebeb 50%
+    );
+    background-size: 20px 20px;
+    margin: 0 -4em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -50,6 +68,21 @@ body {
 .content .links * {
     margin: 0;
     padding: 0 0.5em;
+}
+
+.content a {
+    background: rgb(255, 255, 255);
+    padding: 0.1em 0.2em;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 0.5em;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.content a:hover {
+    background: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
 }
 
 .content hr.divider {
